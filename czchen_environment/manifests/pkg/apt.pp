@@ -8,6 +8,7 @@ class czchen_environment::pkg::apt {
             include czchen_environment::pkg::apt::charlesproxy
             include czchen_environment::pkg::apt::chewing
             include czchen_environment::pkg::apt::dropbox
+            include czchen_environment::pkg::apt::fingerprint
             include czchen_environment::pkg::apt::google
             include czchen_environment::pkg::apt::sbt
 
