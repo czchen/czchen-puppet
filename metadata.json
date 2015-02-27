@@ -1,0 +1,14 @@
+{
+  "name": "czchen-environment",
+  "version": "0.0.0",
+  "author": "czchen",
+  "summary": "Setup environment for czchen",
+  "license": "Apache 2.0",
+  "source": "https://github.com/czchen/czchen-environment",
+  "project_page": "https://github.com/czchen/czchen-environment",
+  "issues_url": "https://github.com/czchen/czchen-environment/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
