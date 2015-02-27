@@ -1,5 +1,6 @@
 class czchen_environment::pkg::apt::google {
     apt::source { 'google-chrome':
+        comment     => 'https://www.google.com.tw/linuxrepositories/',
         location    => 'http://dl.google.com/linux/chrome/deb/',
         release     => 'stable',
         repos       => 'main',
@@ -8,6 +9,7 @@ class czchen_environment::pkg::apt::google {
     }
 
     apt::source { 'google-talkplugin':
+        comment     => 'https://www.google.com.tw/linuxrepositories/',
         location    => 'http://dl.google.com/linux/talkplugin/deb/',
         release     => 'stable',
         repos       => 'main',

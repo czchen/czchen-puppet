@@ -1,6 +1,6 @@
 class czchen_environment::pkg::apt::debian {
     apt::source { 'unstable':
-        comment     => 'Debian unstable',
+        comment     => 'http://http.debian.net/',
         location    => 'http://http.debian.net/debian/',
         release     => 'unstable',
         repos       => 'main contrib non-free',
@@ -9,7 +9,7 @@ class czchen_environment::pkg::apt::debian {
     }
 
     apt::source { 'experimental':
-        comment     => 'Debian experimental',
+        comment     => 'http://http.debian.net/',
         location    => 'http://http.debian.net/debian/',
         release     => 'experimental',
         repos       => 'main contrib non-free',
