@@ -22,7 +22,7 @@ define pip($ensure = installed) {
                 group       => $czchen_environment::params::user::group,
                 umask       => $czchen_environment::params::user::umask,
                 environment => [
-                    "HOME=${role::home}",
+                    "HOME=${czchen_environment::params::user::home}",
                 ],
                 unless      => "pip list --local|grep '^${name} (${version})'",
             }
