@@ -5,7 +5,7 @@ class czchen_environment::pkg::apt::debian {
       release     => 'unstable',
       repos       => 'main contrib non-free',
       include_src => true,
-      include_deb => true
+      include_deb => true,
     }
 
     apt::source { 'experimental':
@@ -14,6 +14,6 @@ class czchen_environment::pkg::apt::debian {
       release     => 'experimental',
       repos       => 'main contrib non-free',
       include_src => true,
-      include_deb => true
+      include_deb => true,
     }
 }
