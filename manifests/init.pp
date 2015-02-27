@@ -1,4 +1,4 @@
-# == Class: environment
+# == Class: czchen-environment
 #
 # Full description of class environment here.
 #
@@ -35,7 +35,6 @@
 #
 # Copyright 2015 Your name here, unless otherwise noted.
 #
-class environment {
-
-
+class czchen-environment {
+    include czchen-environment::pkg
 }
