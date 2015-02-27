@@ -17,8 +17,7 @@ class czchen_environment::pkg::apt::google {
         include_deb => true,
     }
 
-    apt_key { 'google':
-        ensure => 'present',
-        id     => '0xA040830F7FAC5991',
+    apt::key { 'google':
+        key => '0xA040830F7FAC5991',
     }
 }
