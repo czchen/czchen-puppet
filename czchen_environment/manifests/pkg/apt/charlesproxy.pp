@@ -1,6 +1,6 @@
 class czchen_environment::pkg::apt::charlesproxy {
     apt::source { 'charlesproxy':
-        comment => 'http://www.charlesproxy.com/documentation/installation/apt-repository/',
+        comment     => 'http://www.charlesproxy.com/documentation/installation/apt-repository/',
         location    => 'http://www.charlesproxy.com/packages/apt/',
         release     => 'charles-proxy',
         repos       => 'main',
