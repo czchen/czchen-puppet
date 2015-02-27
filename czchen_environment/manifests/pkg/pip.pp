@@ -2,7 +2,7 @@
 define pip($ensure = installed) {
     case $ensure {
         installed: {
-            exec { "pip install --user --force-reinstall ${name}":
+            exec { "pip install --user --force-reinstall --upgrade ${name}":
                 path        => $czchen_environment::params::user::path,
                 user        => $czchen_environment::params::user::account,
                 group       => $czchen_environment::params::user::group,
