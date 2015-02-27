@@ -38,6 +38,7 @@
 class czchen_environment {
     include czchen_environment::params
 
-    include czchen_environment::user
+    include czchen_environment::cfg
     include czchen_environment::pkg
+    include czchen_environment::user
 }
