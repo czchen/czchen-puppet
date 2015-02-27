@@ -3,6 +3,7 @@ class czchen_environment::pkg::apt {
         debian: {
             include czchen_environment::pkg::apt::debian
 
+            include czchen_environment::pkg::apt::charlesproxy
             include czchen_environment::pkg::apt::dropbox
             include czchen_environment::pkg::apt::sbt
 
