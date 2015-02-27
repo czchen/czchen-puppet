@@ -1,4 +1,13 @@
 class czchen_environment::pkg::apt::debian {
+    apt::source { 'experimental':
+        comment     => 'http://http.debian.net/',
+        location    => 'http://http.debian.net/debian/',
+        release     => 'experimental',
+        repos       => 'main contrib non-free',
+        include_src => true,
+        include_deb => true,
+    }
+
     apt::source { 'unstable':
         comment     => 'http://http.debian.net/',
         location    => 'http://http.debian.net/debian/',
@@ -8,10 +17,10 @@ class czchen_environment::pkg::apt::debian {
         include_deb => true,
     }
 
-    apt::source { 'experimental':
+    apt::source { 'testing':
         comment     => 'http://http.debian.net/',
         location    => 'http://http.debian.net/debian/',
-        release     => 'experimental',
+        release     => 'testing',
         repos       => 'main contrib non-free',
         include_src => true,
         include_deb => true,
