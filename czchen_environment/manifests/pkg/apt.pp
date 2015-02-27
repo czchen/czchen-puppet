@@ -10,6 +10,7 @@ class czchen_environment::pkg::apt {
             include czchen_environment::pkg::apt::dropbox
             include czchen_environment::pkg::apt::fingerprint
             include czchen_environment::pkg::apt::google
+            include czchen_environment::pkg::apt::heroku
             include czchen_environment::pkg::apt::sbt
 
             package { $czchen_environment::params::pkg::apt:
