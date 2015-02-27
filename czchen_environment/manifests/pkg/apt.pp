@@ -76,6 +76,7 @@ class czchen_environment::pkg::apt {
         'mutt-patched',
         'p7zip-full',
         'puppet',
+        'sudo',
         'tmux',
         'tree',
         'vim-gnome',
