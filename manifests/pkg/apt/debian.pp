@@ -7,4 +7,13 @@ class czchen-environment::pkg::apt::debian {
       include_src => true,
       include_deb => true
     }
+
+    apt::source { 'debian_experimental':
+      comment     => 'Debian experimental',
+      location    => 'http://http.debian.net/debian/',
+      release     => 'experimental',
+      repos       => 'main contrib non-free',
+      include_src => true,
+      include_deb => true
+    }
 }
