@@ -87,4 +87,9 @@ class czchen_environment::params::pkg {
     $apt_unauthenticated = [
         'sbt',
     ]
+
+    $pip = [
+        'pip',
+        'virtualenvwrapper',
+    ]
 }
