@@ -2,6 +2,4 @@
 
 Environment setup script for czchen.
 
-# How?
-
     sudo ./deploy
