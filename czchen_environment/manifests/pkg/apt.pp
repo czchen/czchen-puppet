@@ -1,8 +1,8 @@
 class czchen_environment::pkg::apt {
-    $ppa_release = 'utopic'
-
     case $operatingsystem {
         debian: {
+            $ppa_release = 'utopic'
+
             include czchen_environment::pkg::apt::debian
 
             include czchen_environment::pkg::apt::charlesproxy
