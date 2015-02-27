@@ -72,6 +72,7 @@ class czchen_environment::params::pkg {
 
         # miscellaneous
         'autojump',
+        'dropbox',
         'gufw',
         'mutt-patched',
         'p7zip-full',
