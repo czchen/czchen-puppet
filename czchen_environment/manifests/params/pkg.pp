@@ -27,6 +27,7 @@ class czchen_environment::params::pkg {
         'blktrace',
         'build-essential',
         'cabal-install',
+        'charles-proxy'.
         'cmake',
         'docker.io',
         'dstat',
@@ -73,6 +74,8 @@ class czchen_environment::params::pkg {
         # miscellaneous
         'autojump',
         'dropbox',
+        'google-chrome-stable',
+        'google-talkplugin',
         'gufw',
         'mutt-patched',
         'p7zip-full',
