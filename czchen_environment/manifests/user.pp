@@ -1,5 +1,5 @@
 class czchen_environment::user {
-    user { $czchen_environment::params::user:
+    user { $czchen_environment::params::user::account:
         groups => [
             'sudo',
             'libvirt',
