@@ -27,7 +27,7 @@ class czchen_environment::params::pkg {
         'blktrace',
         'build-essential',
         'cabal-install',
-        'charles-proxy'.
+        'charles-proxy',
         'cmake',
         'docker.io',
         'dstat',
