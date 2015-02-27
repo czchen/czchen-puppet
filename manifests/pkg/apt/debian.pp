@@ -1,4 +1,4 @@
-class czchen-environment::pkg::apt::debian {
+class czchen_environment::pkg::apt::debian {
     apt::source { 'unstable':
       comment     => 'Debian unstable',
       location    => 'http://http.debian.net/debian/',

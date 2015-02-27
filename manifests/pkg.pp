@@ -1,3 +1,3 @@
-class czchen-environment::pkg {
-    include czchen-environment::pkg::apt
+class czchen_environment::pkg {
+    include czchen_environment::pkg::apt
 }

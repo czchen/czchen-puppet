@@ -1,3 +1,3 @@
-class czchen-environment::pkg::apt {
-    include czchen-environment::pkg::apt::debian
+class czchen_environment::pkg::apt {
+    include czchen_environment::pkg::apt::debian
 }
