@@ -8,8 +8,7 @@ class czchen_environment::pkg::apt::fingerprint {
         include_deb => true,
     }
 
-    apt_key { 'fingerprint':
-        ensure => 'present',
-        id     => '0xEFD5FA852F20733F',
+    apt::key { 'fingerprint':
+        key => '0xEFD5FA852F20733F',
     }
 }

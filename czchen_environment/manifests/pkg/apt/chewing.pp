@@ -8,8 +8,7 @@ class czchen_environment::pkg::apt::chewing {
         include_deb => true,
     }
 
-    apt_key { 'chewing':
-        ensure => 'present',
-        id     => '0x3924B8DF29A8F5EB',
+    apt::key { 'chewing':
+        key => '0x3924B8DF29A8F5EB',
     }
 }

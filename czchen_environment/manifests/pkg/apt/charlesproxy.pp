@@ -8,8 +8,8 @@ class czchen_environment::pkg::apt::charlesproxy {
         include_deb => true,
     }
 
-    apt_key { 'charlesproxy':
-        ensure => 'present',
-        id     => '0x500CCEC520E0B5BF',
+    apt::key { 'charlesproxy':
+        key        => '0x500CCEC520E0B5BF',
+        key_source => 'http://www.charlesproxy.com/packages/apt/PublicKey',
     }
 }

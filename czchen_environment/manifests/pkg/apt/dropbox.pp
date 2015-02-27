@@ -7,8 +7,7 @@ class czchen_environment::pkg::apt::dropbox {
         include_deb => true,
     }
 
-    apt_key { 'dropbox':
-        ensure => 'present',
-        id     => '0xFC918B335044912E',
+    apt::key { 'dropbox':
+        key => '0xFC918B335044912E',
     }
 }

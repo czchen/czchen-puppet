@@ -8,8 +8,8 @@ class czchen_environment::pkg::apt::heroku {
         include_deb => true,
     }
 
-    apt_key { 'heroku':
-        ensure => 'present',
-        id     => '0xC927EBE00F1B0520',
+    apt::key { 'heroku':
+        key        => '0xC927EBE00F1B0520',
+        key_source => 'https://toolbelt.heroku.com/apt/release.key',
     }
 }
