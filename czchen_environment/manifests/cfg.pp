@@ -6,4 +6,6 @@ class czchen_environment::cfg {
         ensure  => file,
         content => 'SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", TAG+="uaccess"',
     }
+
+    include czchen_environment::cfg::sudo
 }
