@@ -93,7 +93,6 @@ class czchen_environment::params::pkg {
     ]
 
     $pip = [
-        'pip',
         'virtualenvwrapper',
     ]
 }
