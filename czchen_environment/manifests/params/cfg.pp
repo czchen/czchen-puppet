@@ -16,6 +16,7 @@ class czchen_environment::params::cfg {
         'rpm'            => { url => 'https://github.com/czchen/rpm.vcsh', } ,
         'ssh'            => { url => 'https://github.com/czchen/ssh.vcsh', } ,
         'sublime-text-3' => { url => 'https://github.com/czchen/sublime-text-3.vcsh', },
+        'taskwarrior'    => { url => 'https://github.com/czchen/taskwarrior.vcsh', },
         'tmux'           => { url => 'https://github.com/czchen/tmux.vcsh', },
         'vim'            => { url => 'https://github.com/czchen/vim.vcsh', },
         'zsh'            => { url => 'https://github.com/czchen/zsh.vcsh', },
