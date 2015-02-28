@@ -83,6 +83,7 @@ class czchen_environment::params::pkg {
         'sudo',
         'tmux',
         'tree',
+        'vcsh',
         'vim-gnome',
         'zsh',
         'zsh-antigen',
