@@ -81,6 +81,7 @@ class czchen_environment::params::pkg {
         'p7zip-full',
         'puppet',
         'sudo',
+        'taskwarrior',
         'tmux',
         'tree',
         'vcsh',
