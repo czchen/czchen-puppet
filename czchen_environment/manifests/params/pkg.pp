@@ -94,6 +94,14 @@ class czchen_environment::params::pkg {
         'sbt',
     ]
 
+    $npm = [
+        'fuck-you',
+        'LiveScript',
+        'n',
+        'nsp',
+        'ydict.js',
+    ]
+
     $pip = [
         'virtualenvwrapper',
     ]
