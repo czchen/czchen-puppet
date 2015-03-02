@@ -94,6 +94,12 @@ class czchen_environment::params::pkg {
         'sbt',
     ]
 
+    $gem = [
+        'puppet',
+        'puppet-lint',
+        'tmuxinator',
+    ]
+
     $npm = [
         'fuck-you',
         'LiveScript',
