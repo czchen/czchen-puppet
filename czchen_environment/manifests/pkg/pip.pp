@@ -11,6 +11,7 @@ define pip($ensure = installed) {
                     "HOME=${czchen_environment::params::user::home}",
                 ],
                 unless      => "pip list --local|grep  '^${name} ('",
+                require     => Package[$czchen_environment::pkg::pip::tool],
             }
         }
 
@@ -25,6 +26,7 @@ define pip($ensure = installed) {
                     "HOME=${czchen_environment::params::user::home}",
                 ],
                 unless      => "pip list --local|grep '^${name} (${version})'",
+                require     => Package[$czchen_environment::pkg::pip::tool],
             }
         }
     }
@@ -32,9 +34,9 @@ define pip($ensure = installed) {
 
 class czchen_environment::pkg::pip {
     # FIXME: Different distro may have different package name for pip
-    $pkg_pip = 'python-pip'
+    $tool = 'python-pip'
 
-    package {$pkg_pip:
+    package {$tool:
         ensure => installed,
     }
 
