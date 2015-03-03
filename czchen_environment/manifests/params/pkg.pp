@@ -109,6 +109,7 @@ class czchen_environment::params::pkg {
     ]
 
     $pip = [
+        'goobook',
         'virtualenvwrapper',
     ]
 }
