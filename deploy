@@ -1,3 +1,3 @@
 #!/bin/sh
 dir=`dirname $0`
-puppet apply --verbose --modulepath=${HOME}/.puppet/modules:${dir} ${dir}/deploy.pp
+puppet apply --verbose --modulepath=/usr/share/puppet/modules:${HOME}/.puppet/modules:${dir} ${dir}/deploy.pp
