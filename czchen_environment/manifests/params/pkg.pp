@@ -105,6 +105,7 @@ class czchen_environment::params::pkg {
 
     $npm = [
         'fuck-you',
+        'jshint',
         'LiveScript',
         'n',
         'nsp',
