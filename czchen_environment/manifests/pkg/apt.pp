@@ -12,6 +12,7 @@ class czchen_environment::pkg::apt {
             include czchen_environment::pkg::apt::google
             include czchen_environment::pkg::apt::heroku
             include czchen_environment::pkg::apt::sbt
+            include czchen_environment::pkg::apt::sublimetext
 
             package { $czchen_environment::params::pkg::apt:
                 ensure => installed,

@@ -49,6 +49,7 @@ class czchen_environment::params::pkg {
         'net-tools',
         'pinfo',
         'sbuild',
+        'sublime-text-installer',
         'sysdig',
         'sysstat',
         'texinfo',
