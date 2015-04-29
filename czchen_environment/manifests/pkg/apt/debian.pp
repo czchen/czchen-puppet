@@ -3,7 +3,7 @@ class czchen_environment::pkg::apt::debian {
         comment     => 'http://http.debian.net/',
         location    => 'http://http.debian.net/debian/',
         release     => 'experimental',
-        repos       => 'main contrib non-free',
+        repos       => 'main',
         include_src => true,
         include_deb => true,
     }
