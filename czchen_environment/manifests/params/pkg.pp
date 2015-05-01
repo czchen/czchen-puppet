@@ -7,6 +7,7 @@ class czchen_environment::params::pkg {
 
         # debian
         'apt-file',
+        'apt-listbugs',
         'apt-listchanges',
         'apt-transport-https',
         'autopkgtest',
