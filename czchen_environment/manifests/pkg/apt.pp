@@ -5,6 +5,7 @@ class czchen_environment::pkg::apt {
 
             include czchen_environment::pkg::apt::debian
 
+            include czchen_environment::pkg::apt::atom
             include czchen_environment::pkg::apt::charlesproxy
             include czchen_environment::pkg::apt::chewing
             include czchen_environment::pkg::apt::dropbox
