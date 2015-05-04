@@ -1,5 +1,6 @@
 class czchen_environment::params::cfg {
     $vcsh = {
+        'atom'           => { url => 'https://github.com/czchen/atom.vcsh', },
         'bzr'            => { url => 'https://github.com/czchen/bzr.vcsh', },
         'debian'         => { url => 'https://github.com/czchen/debian.vcsh', },
         'font'           => { url => 'https://github.com/czchen/font.vcsh', },
