@@ -24,6 +24,7 @@ class czchen_environment::params::pkg {
         'ubuntu-dev-tools',
 
         # development
+        'atom',
         'autoconf',
         'automake',
         'blktrace',
