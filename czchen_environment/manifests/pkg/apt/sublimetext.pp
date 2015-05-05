@@ -8,5 +8,6 @@ class czchen_environment::pkg::apt::sublimetext {
         repos       => 'main',
         include_src => true,
         include_deb => true,
+        require     => Apt::key[webupd8team]
     }
 }
