@@ -92,6 +92,7 @@ class czchen_environment::params::pkg {
         'tree',
         'vcsh',
         'vim-gnome',
+        'vit',
         'zsh',
         'zsh-antigen',
     ]
