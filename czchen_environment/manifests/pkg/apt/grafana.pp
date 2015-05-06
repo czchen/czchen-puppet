@@ -8,6 +8,6 @@ class czchen_environment::pkg::apt::grafana {
         repos       => 'main',
         include_src => false,
         include_deb => true,
-        require     => Apt::key[packagecloud]
+        require     => Apt::Key[packagecloud]
     }
 }
