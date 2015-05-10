@@ -8,6 +8,8 @@ class czchen_environment::pkg::apt::debian {
         include_deb => true,
     }
 
+    # FIXME: remove duplicated code
+
     apt::source { 'unstable':
         comment     => 'http://http.debian.net/',
         location    => 'http://http.debian.net/debian/',
@@ -21,6 +23,24 @@ class czchen_environment::pkg::apt::debian {
         comment     => 'http://http.debian.net/',
         location    => 'http://http.debian.net/debian/',
         release     => 'testing',
+        repos       => 'main contrib non-free',
+        include_src => true,
+        include_deb => true,
+    }
+
+    apt::source { 'stable':
+        comment     => 'http://http.debian.net/',
+        location    => 'http://http.debian.net/debian/',
+        release     => 'stable',
+        repos       => 'main contrib non-free',
+        include_src => true,
+        include_deb => true,
+    }
+
+    apt::source { 'oldstable':
+        comment     => 'http://http.debian.net/',
+        location    => 'http://http.debian.net/debian/',
+        release     => 'oldstable',
         repos       => 'main contrib non-free',
         include_src => true,
         include_deb => true,
