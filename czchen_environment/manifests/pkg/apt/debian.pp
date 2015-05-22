@@ -1,7 +1,7 @@
 class czchen_environment::pkg::apt::debian {
     apt::source { 'experimental':
-        comment     => 'http://http.debian.net/',
-        location    => 'http://http.debian.net/debian/',
+        comment     => 'http://httpredir.debian.org/',
+        location    => 'http://httpredir.debian.org/debian/',
         release     => 'experimental',
         repos       => 'main',
         include_src => true,
@@ -11,8 +11,8 @@ class czchen_environment::pkg::apt::debian {
     # FIXME: remove duplicated code
 
     apt::source { 'unstable':
-        comment     => 'http://http.debian.net/',
-        location    => 'http://http.debian.net/debian/',
+        comment     => 'http://httpredir.debian.org/',
+        location    => 'http://httpredir.debian.org/debian/',
         release     => 'unstable',
         repos       => 'main contrib non-free',
         include_src => true,
@@ -20,8 +20,8 @@ class czchen_environment::pkg::apt::debian {
     }
 
     apt::source { 'testing':
-        comment     => 'http://http.debian.net/',
-        location    => 'http://http.debian.net/debian/',
+        comment     => 'http://httpredir.debian.org/',
+        location    => 'http://httpredir.debian.org/debian/',
         release     => 'testing',
         repos       => 'main contrib non-free',
         include_src => true,
@@ -29,8 +29,8 @@ class czchen_environment::pkg::apt::debian {
     }
 
     apt::source { 'stable':
-        comment     => 'http://http.debian.net/',
-        location    => 'http://http.debian.net/debian/',
+        comment     => 'http://httpredir.debian.org/',
+        location    => 'http://httpredir.debian.org/debian/',
         release     => 'stable',
         repos       => 'main contrib non-free',
         include_src => true,
@@ -38,8 +38,8 @@ class czchen_environment::pkg::apt::debian {
     }
 
     apt::source { 'oldstable':
-        comment     => 'http://http.debian.net/',
-        location    => 'http://http.debian.net/debian/',
+        comment     => 'http://httpredir.debian.org/',
+        location    => 'http://httpredir.debian.org/debian/',
         release     => 'oldstable',
         repos       => 'main contrib non-free',
         include_src => true,
