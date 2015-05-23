@@ -11,6 +11,7 @@ class czchen_environment::params::pkg {
         'apt-listchanges',
         'apt-transport-https',
         'autopkgtest',
+        'ben',
         #'check-all-the-things', # Not in Debian yet
         'debhelper',
         'debian-goodies',
