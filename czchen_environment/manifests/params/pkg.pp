@@ -15,6 +15,7 @@ class czchen_environment::params::pkg {
         #'check-all-the-things', # Not in Debian yet
         'debhelper',
         'debian-goodies',
+        'debmake',
         'devscripts',
         'dh-autoreconf',
         'dh-make',
