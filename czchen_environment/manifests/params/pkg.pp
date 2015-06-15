@@ -81,6 +81,7 @@ class czchen_environment::params::pkg {
         # miscellaneous
         'autojump',
         'dropbox',
+        'goobook',
         'google-chrome-stable',
         'google-talkplugin',
         'gufw',
@@ -119,7 +120,6 @@ class czchen_environment::params::pkg {
     ]
 
     $pip = [
-        'goobook',
         'virtualenvwrapper',
     ]
 }
