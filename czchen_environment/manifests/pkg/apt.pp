@@ -14,6 +14,7 @@ class czchen_environment::pkg::apt {
             include czchen_environment::pkg::apt::grafana
             include czchen_environment::pkg::apt::heroku
             include czchen_environment::pkg::apt::hipchat
+            include czchen_environment::pkg::apt::mongodb
             include czchen_environment::pkg::apt::sbt
             include czchen_environment::pkg::apt::sublimetext
 
