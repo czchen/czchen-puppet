@@ -6,6 +6,8 @@ class czchen_environment::pkg::apt::fingerprint {
         repos       => 'main',
         include_src => true,
         include_deb => true,
+
+        require     => Apt::Key[fingerprint]
     }
 
     apt::key { 'fingerprint':
