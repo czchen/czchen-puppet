@@ -19,6 +19,7 @@ class czchen_environment::pkg::apt {
             include czchen_environment::pkg::apt::sbt
             include czchen_environment::pkg::apt::simplexsolutionsinc
             include czchen_environment::pkg::apt::sublimetext
+            include czchen_environment::pkg::apt::syncthing
 
             package { $czchen_environment::params::pkg::apt:
                 ensure => installed,

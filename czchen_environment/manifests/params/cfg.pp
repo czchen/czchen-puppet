@@ -18,6 +18,7 @@ class czchen_environment::params::cfg {
         'sbt'            => { url => 'https://github.com/czchen/sbt.vcsh', },
         'ssh'            => { url => 'https://github.com/czchen/ssh.vcsh', } ,
         'sublime-text-3' => { url => 'https://github.com/czchen/sublime-text-3.vcsh', },
+        'syncthing' => { url => 'https://github.com/czchen/syncthing.vcsh', },
         'taskwarrior'    => { url => 'https://github.com/czchen/taskwarrior.vcsh', },
         'tmux'           => { url => 'https://github.com/czchen/tmux.vcsh', },
         'vim'            => { url => 'https://github.com/czchen/vim.vcsh', },
