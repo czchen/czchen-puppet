@@ -92,6 +92,7 @@ class czchen_environment::params::pkg {
         'picard',
         'puppet',
         'sudo',
+        'syncthing',
         'taskwarrior',
         'tmux',
         'tree',
