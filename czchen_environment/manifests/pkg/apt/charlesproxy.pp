@@ -6,6 +6,7 @@ class czchen_environment::pkg::apt::charlesproxy {
         repos       => 'main',
         include_src => false,
         include_deb => true,
+        require     => Apt::Key[charlesproxy],
     }
 
     apt::key { 'charlesproxy':
