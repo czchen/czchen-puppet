@@ -21,6 +21,7 @@ class czchen_environment::params::cfg {
         'syncthing' => { url => 'https://github.com/czchen/syncthing.vcsh', },
         'taskwarrior'    => { url => 'https://github.com/czchen/taskwarrior.vcsh', },
         'tmux'           => { url => 'https://github.com/czchen/tmux.vcsh', },
+        'vcsh'           => { url => 'https://github.com/czchen/vcsh.vcsh', },
         'vim'            => { url => 'https://github.com/czchen/vim.vcsh', },
         'zsh'            => { url => 'https://github.com/czchen/zsh.vcsh', },
     }
