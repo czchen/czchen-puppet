@@ -24,11 +24,6 @@ class czchen_environment::pkg::apt {
             package { $czchen_environment::params::pkg::apt:
                 ensure => installed,
             }
-
-            package { $czchen_environment::params::pkg::apt_unauthenticated:
-                ensure          => installed,
-                install_options => '--allow-unauthenticated'
-            }
         }
     }
 }

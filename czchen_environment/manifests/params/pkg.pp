@@ -53,6 +53,7 @@ class czchen_environment::params::pkg {
         'manpages-posix-dev',
         'net-tools',
         'pinfo',
+        'sbt',
         'sbuild',
         'sublime-text-installer',
         'sysdig',
@@ -101,10 +102,6 @@ class czchen_environment::params::pkg {
         'vit',
         'zsh',
         'zsh-antigen',
-    ]
-
-    $apt_unauthenticated = [
-        'sbt',
     ]
 
     $gem = [

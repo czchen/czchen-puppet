@@ -6,5 +6,11 @@ class czchen_environment::pkg::apt::sbt {
         repos       => '/',
         include_src => false,
         include_deb => true,
+
+        require     => Apt::Key[sbt]
+    }
+
+    apt::key { 'sbt':
+        key => '99E82A75642AC823',
     }
 }
