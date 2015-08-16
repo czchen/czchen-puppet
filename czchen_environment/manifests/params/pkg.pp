@@ -27,6 +27,7 @@ class czchen_environment::params::pkg {
         'ubuntu-dev-tools',
 
         # development
+        'afl',
         'atom',
         'autoconf',
         'automake',
