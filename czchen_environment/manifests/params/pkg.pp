@@ -13,6 +13,7 @@ class czchen_environment::params::pkg {
         'autopkgtest',
         'ben',
         #'check-all-the-things', # Not in Debian yet
+        'cme',
         'debdelta',
         'debhelper',
         'debian-goodies',
@@ -27,6 +28,7 @@ class czchen_environment::params::pkg {
         'ubuntu-dev-tools',
 
         # development
+        'afl',
         'atom',
         'autoconf',
         'automake',
