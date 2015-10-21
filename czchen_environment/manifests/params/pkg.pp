@@ -98,9 +98,9 @@ class czchen_environment::params::pkg {
         'taskwarrior',
         'tmux',
         'tree',
-        'vcsh',
         'vim-gnome',
         'vit',
+        'yadm',
         'zsh',
         'zsh-antigen',
     ]
