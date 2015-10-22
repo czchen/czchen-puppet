@@ -11,7 +11,7 @@ class czchen_environment::pkg::apt::heroku {
     }
 
     apt::key { 'heroku':
-        key        => '0xC927EBE00F1B0520',
-        key_source => 'https://toolbelt.heroku.com/apt/release.key',
+        id     => '150C6249147592DE6D91981CC927EBE00F1B0520',
+        source => 'https://toolbelt.heroku.com/apt/release.key',
     }
 }

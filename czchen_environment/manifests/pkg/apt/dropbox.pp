@@ -10,6 +10,6 @@ class czchen_environment::pkg::apt::dropbox {
     }
 
     apt::key { 'dropbox':
-        key => '0xFC918B335044912E',
+        id => '1C61A2656FB57B7E4DE0F4C1FC918B335044912E',
     }
 }

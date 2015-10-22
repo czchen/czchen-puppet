@@ -12,7 +12,7 @@ class czchen_environment::pkg::apt::charlesproxy {
     }
 
     apt::key { 'charlesproxy':
-        key        => '0x500CCEC520E0B5BF',
-        key_source => 'http://www.charlesproxy.com/packages/apt/PublicKey',
+        id     => '29A78E603B29AC9A889235E6500CCEC520E0B5BF',
+        source => 'http://www.charlesproxy.com/packages/apt/PublicKey',
     }
 }

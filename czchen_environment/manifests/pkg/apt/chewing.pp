@@ -11,6 +11,6 @@ class czchen_environment::pkg::apt::chewing {
     }
 
     apt::key { 'chewing':
-        key => '0x3924B8DF29A8F5EB',
+        id => 'BFBD0EFF8F181A2A4CAA780F3924B8DF29A8F5EB',
     }
 }

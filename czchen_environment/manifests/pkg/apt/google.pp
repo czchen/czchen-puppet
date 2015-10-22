@@ -22,6 +22,6 @@ class czchen_environment::pkg::apt::google {
     }
 
     apt::key { 'google':
-        key => '0xA040830F7FAC5991',
+        id => '4CCA1EAF950CEE4AB83976DCA040830F7FAC5991',
     }
 }

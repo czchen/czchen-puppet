@@ -13,6 +13,6 @@ class czchen_environment::pkg::apt::fingerprint {
     }
 
     apt::key { 'fingerprint':
-        key => '0xEFD5FA852F20733F',
+        id => '8141A328E64AC6C85D337D03EFD5FA852F20733F',
     }
 }
