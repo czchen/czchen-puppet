@@ -1,12 +1,14 @@
 class czchen_environment::pkg::apt::syncthing {
     apt::source { 'syncthing':
-        comment     => 'http://apt.syncthing.net/',
-        location    => 'http://apt.syncthing.net/',
-        release     => 'syncthing',
-        repos       => 'release',
-        include_src => false,
-        include_deb => true,
-        require     => Apt::Key[syncthing],
+        comment  => 'http://apt.syncthing.net/',
+        location => 'http://apt.syncthing.net/',
+        release  => 'syncthing',
+        repos    => 'release',
+        include  => {
+            deb => true,
+            src => false,
+        },
+        require  => Apt::Key[syncthing],
     }
 
     apt::key { 'syncthing':

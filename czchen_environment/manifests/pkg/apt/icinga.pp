@@ -1,12 +1,14 @@
 class czchen_environment::pkg::apt::icinga {
     apt::source { 'icinga':
-        comment     => 'http://packages.icinga.org/debian/',
-        location    => 'http://packages.icinga.org/debian',
-        release     => 'icinga-unstable',
-        repos       => 'main',
-        include_src => true,
-        include_deb => true,
-        require     => Apt::Key[icinga],
+        comment  => 'http://packages.icinga.org/debian/',
+        location => 'http://packages.icinga.org/debian',
+        release  => 'icinga-unstable',
+        repos    => 'main',
+        include  => {
+            deb => true,
+            src => true,
+        },
+        require  => Apt::Key[icinga],
     }
 
     apt::key { 'icinga':

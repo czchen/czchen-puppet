@@ -1,11 +1,13 @@
 class czchen_environment::pkg::apt::heroku {
     apt::source { 'heroku':
-        comment     => 'https://toolbelt.heroku.com/debian',
-        location    => 'http://toolbelt.heroku.com/ubuntu',
-        release     => '',
-        repos       => './',
-        include_src => false,
-        include_deb => true,
+        comment  => 'https://toolbelt.heroku.com/debian',
+        location => 'http://toolbelt.heroku.com/ubuntu',
+        release  => '',
+        repos    => './',
+        include  => {
+            deb => true,
+            src => false,
+        },
     }
 
     apt::key { 'heroku':

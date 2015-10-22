@@ -1,12 +1,14 @@
 class czchen_environment::pkg::apt::charlesproxy {
     apt::source { 'charlesproxy':
-        comment     => 'http://www.charlesproxy.com/documentation/installation/apt-repository/',
-        location    => 'http://www.charlesproxy.com/packages/apt/',
-        release     => 'charles-proxy',
-        repos       => 'main',
-        include_src => false,
-        include_deb => true,
-        require     => Apt::Key[charlesproxy],
+        comment  => 'http://www.charlesproxy.com/documentation/installation/apt-repository/',
+        location => 'http://www.charlesproxy.com/packages/apt/',
+        release  => 'charles-proxy',
+        repos    => 'main',
+        include  => {
+            deb => true,
+            src => false,
+        },
+        require  => Apt::Key[charlesproxy],
     }
 
     apt::key { 'charlesproxy':
