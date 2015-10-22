@@ -8,7 +8,7 @@ class czchen_environment::pkg::apt::hipchat {
             deb => true,
             src => false,
         },
-        require     => Apt::Key[hipchat]
+        require  => Apt::Key[hipchat]
     }
 
     apt::key { 'hipchat':
