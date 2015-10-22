@@ -13,6 +13,6 @@ class czchen_environment::pkg::apt::sbt {
     }
 
     apt::key { 'sbt':
-        key => '99E82A75642AC823',
+        id => '2EE0EA64E40A89B84B2DF73499E82A75642AC823',
     }
 }

@@ -12,7 +12,7 @@ class czchen_environment::pkg::apt::icinga {
     }
 
     apt::key { 'icinga':
-        key        => '0xC6E319C334410682',
-        key_source => 'http://packages.icinga.org/icinga.key',
+        id     => 'F51A91A5EE001AA5D77D53C4C6E319C334410682',
+        source => 'http://packages.icinga.org/icinga.key',
     }
 }

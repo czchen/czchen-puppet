@@ -12,6 +12,6 @@ class czchen_environment::pkg::apt::hipchat {
     }
 
     apt::key { 'hipchat':
-        key => 'AAD4AA21729B5780',
+        id => '69F57C04EA38EEE7A47E9BCCAAD4AA21729B5780',
     }
 }

@@ -12,7 +12,7 @@ class czchen_environment::pkg::apt::syncthing {
     }
 
     apt::key { 'syncthing':
-        key        => '0xD26E6ED000654A3E',
-        key_source => 'https://syncthing.net/release-key.txt',
+        id     => '37C84554E7E0A261E4F76E1ED26E6ED000654A3E',
+        source => 'https://syncthing.net/release-key.txt',
     }
 }

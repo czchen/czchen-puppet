@@ -15,6 +15,6 @@ class czchen_environment::pkg::apt::mongodb {
 
 class czchen_environment::pkg::apt::mongodb {
     apt::key { 'mongodb':
-        key => '9ECBEC467F0CEB10',
+        id => '492EAFE8CD016A07919F1D2B9ECBEC467F0CEB10',
     }
 }

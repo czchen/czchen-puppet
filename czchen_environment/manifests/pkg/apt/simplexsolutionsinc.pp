@@ -12,6 +12,6 @@ class czchen_environment::pkg::apt::simplexsolutionsinc {
     }
 
     apt::key { 'simplexsolutionsinc':
-        key        => '0xF376DA5306BED4DC',
+        id => 'A622AFAC2120417CB90A4356F376DA5306BED4DC',
     }
 }
