@@ -9,7 +9,7 @@ class czchen_environment::pkg::apt::fingerprint {
             src => true,
         },
 
-        require     => Apt::Key[fingerprint]
+        require  => Apt::Key[fingerprint]
     }
 
     apt::key { 'fingerprint':
