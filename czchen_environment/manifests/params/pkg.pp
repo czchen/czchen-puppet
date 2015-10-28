@@ -101,8 +101,8 @@ class czchen_environment::params::pkg {
         'vim-gnome',
         'vit',
         'yadm',
+        'zgen',
         'zsh',
-        'zsh-antigen',
     ]
 
     $gem = [
