@@ -12,10 +12,10 @@ class czchen_environment::pkg::apt::debian {
 
     # FIXME: remove duplicated code
 
-    apt::source { 'unstable':
+    apt::source { 'sid':
         comment  => 'http://httpredir.debian.org/',
         location => 'http://httpredir.debian.org/debian/',
-        release  => 'unstable',
+        release  => 'sid',
         repos    => 'main contrib non-free',
         include  => {
             deb => true,
@@ -23,10 +23,10 @@ class czchen_environment::pkg::apt::debian {
         },
     }
 
-    apt::source { 'testing':
+    apt::source { 'stretch':
         comment  => 'http://httpredir.debian.org/',
         location => 'http://httpredir.debian.org/debian/',
-        release  => 'testing',
+        release  => 'stretch',
         repos    => 'main contrib non-free',
         include  => {
             deb => true,
@@ -34,10 +34,10 @@ class czchen_environment::pkg::apt::debian {
         },
     }
 
-    apt::source { 'stable':
+    apt::source { 'jessie':
         comment  => 'http://httpredir.debian.org/',
         location => 'http://httpredir.debian.org/debian/',
-        release  => 'stable',
+        release  => 'jessie',
         repos    => 'main contrib non-free',
         include  => {
             deb => true,
@@ -45,10 +45,21 @@ class czchen_environment::pkg::apt::debian {
         },
     }
 
-    apt::source { 'oldstable':
+    apt::source { 'wheezy':
         comment  => 'http://httpredir.debian.org/',
         location => 'http://httpredir.debian.org/debian/',
-        release  => 'oldstable',
+        release  => 'wheezy',
+        repos    => 'main contrib non-free',
+        include  => {
+            deb => true,
+            src => true,
+        },
+    }
+
+    apt::source { 'squeeze':
+        comment  => 'http://httpredir.debian.org/',
+        location => 'http://httpredir.debian.org/debian/',
+        release  => 'squeeze',
         repos    => 'main contrib non-free',
         include  => {
             deb => true,
