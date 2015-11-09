@@ -6,7 +6,7 @@ class czchen_environment::pkg::apt::google {
         repos    => 'main',
         include  => {
             deb => true,
-            src => true,
+            src => false,
         },
     }
 
@@ -17,7 +17,7 @@ class czchen_environment::pkg::apt::google {
         repos    => 'main',
         include  => {
             deb => true,
-            src => true,
+            src => false,
         },
     }
 
