@@ -106,7 +106,6 @@ class czchen_environment::params::pkg {
     ]
 
     $gem = [
-        'puppet',
         'puppet-lint',
         'tmuxinator',
     ]
