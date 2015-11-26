@@ -36,7 +36,7 @@ class czchen_environment::params::pkg {
         'cabal-install',
         'charles-proxy',
         'cmake',
-        'docker.io',
+        # 'docker.io',
         'dstat',
         'exuberant-ctags',
         'freemind',
