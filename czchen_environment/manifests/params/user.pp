@@ -4,6 +4,6 @@ class czchen_environment::params::user {
     $shell    = '/bin/zsh'
 
     $group    = $account
-    $umask    = 077
+    $umask    = '077'
     $path     = '/usr/local/bin:/usr/bin:/bin'
 }
