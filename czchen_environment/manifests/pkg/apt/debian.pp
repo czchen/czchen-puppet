@@ -10,12 +10,30 @@ class czchen_environment::pkg::apt::debian {
         },
     }
 
-    # FIXME: remove duplicated code
+    apt::source { 'experimental-debug':
+        location => 'http://debug.mirrors.debian.org/debian-debug/',
+        release  => 'experimental-debug',
+        repos    => 'main contrib non-free',
+        include  => {
+            deb => true,
+            src => true,
+        },
+    }
 
-    apt::source { 'sid':
+    apt::source { 'unstable':
         comment  => 'http://httpredir.debian.org/',
         location => 'http://httpredir.debian.org/debian/',
-        release  => 'sid',
+        release  => 'unstable',
+        repos    => 'main contrib non-free',
+        include  => {
+            deb => true,
+            src => true,
+        },
+    }
+
+    apt::source { 'unstable-debug':
+        location => 'http://debug.mirrors.debian.org/debian-debug/',
+        release  => 'unstable-debug',
         repos    => 'main contrib non-free',
         include  => {
             deb => true,
