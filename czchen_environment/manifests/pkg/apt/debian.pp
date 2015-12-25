@@ -40,4 +40,25 @@ class czchen_environment::pkg::apt::debian {
             src => true,
         },
     }
+
+    apt::source { 'testing':
+        comment  => 'http://httpredir.debian.org/',
+        location => 'http://httpredir.debian.org/debian/',
+        release  => 'testing',
+        repos    => 'main contrib non-free',
+        include  => {
+            deb => true,
+            src => true,
+        },
+    }
+
+    # apt::source { 'testing-debug':
+    #     location => 'http://debug.mirrors.debian.org/debian-debug/',
+    #     release  => 'testing-debug',
+    #     repos    => 'main contrib non-free',
+    #     include  => {
+    #         deb => true,
+    #         src => true,
+    #     },
+    # }
 }
