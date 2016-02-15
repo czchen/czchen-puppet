@@ -3,7 +3,7 @@ class czchen_environment::pkg::apt::mongodb {
     apt::source { 'mongodb':
         comment  => 'http://docs.mongodb.org/manual/tutorial/install-mongodb-on-debian/',
         location => 'http://repo.mongodb.org/apt/debian',
-        release  => 'wheezy/mongodb-org/3.0',
+        release  => 'wheezy/mongodb-org/3.2',
         repos    => 'main',
         include  => {
             deb => true,
