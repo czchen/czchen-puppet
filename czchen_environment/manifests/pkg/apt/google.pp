@@ -8,6 +8,7 @@ class czchen_environment::pkg::apt::google {
             deb => true,
             src => false,
         },
+        require      => Apt::Key[google],
     }
 
     apt::source { 'google-talkplugin':
@@ -19,6 +20,7 @@ class czchen_environment::pkg::apt::google {
             deb => true,
             src => false,
         },
+        require  => Apt::Key[google],
     }
 
     apt::key { 'google':
