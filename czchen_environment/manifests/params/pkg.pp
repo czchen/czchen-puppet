@@ -71,7 +71,6 @@ class czchen_environment::params::pkg {
 
         # fonts
         'font-manager',
-        'fonts-droid',
         'fonts-noto',
         'fonts-noto-cjk',
 
