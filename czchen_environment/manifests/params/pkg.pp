@@ -66,7 +66,6 @@ class czchen_environment::params::pkg {
         'virt-manager',
 
         # desktop
-        'keepassx',
         'playonlinux',
 
         # fonts
