@@ -73,6 +73,7 @@ class czchen_environment::params::pkg {
         'font-manager',
         'fonts-droid',
         'fonts-noto',
+        'fonts-noto-cjk',
 
         # gpg key
         'gnupg2',
