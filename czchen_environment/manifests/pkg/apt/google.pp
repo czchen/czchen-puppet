@@ -12,18 +12,6 @@ class czchen_environment::pkg::apt::google {
         require      => Apt::Key[google],
     }
 
-    apt::source { 'google-talkplugin':
-        comment  => 'https://www.google.com.tw/linuxrepositories/',
-        location => 'http://dl.google.com/linux/talkplugin/deb/',
-        release  => 'stable',
-        repos    => 'main',
-        include  => {
-            deb => true,
-            src => false,
-        },
-        require  => Apt::Key[google],
-    }
-
     apt::key { 'google':
         id => '4CCA1EAF950CEE4AB83976DCA040830F7FAC5991',
     }
