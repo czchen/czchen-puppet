@@ -1,4 +1,4 @@
-# czchen\_environment
+# czchen-puppet
 
 Environment setup script for czchen.
 
